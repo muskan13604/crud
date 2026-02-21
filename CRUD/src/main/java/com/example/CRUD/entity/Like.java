@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(
-        name = "likes",
+        name = "likes" ,
         uniqueConstraints = {
                 @UniqueConstraint(columnNames = {"user_id", "post_id"})
         }
