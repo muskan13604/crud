@@ -57,7 +57,7 @@ public class UserController {
     @GetMapping("/visible")
     public ResponseEntity<String> toggleVisible(Authentication authentication){
         String username = authentication.getName();
-        UserService.toggleVisible(username);
+        userService.toggleVisible(username);
 
         return ResponseEntity.ok().build();
 
